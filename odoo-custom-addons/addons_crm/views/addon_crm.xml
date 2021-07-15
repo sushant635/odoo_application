@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="crm_bu_view_form" model="ir.ui.view">
+        <field name="name">crm.bu.form</field>
+        <field name="model">crm.bu</field>
+        <field name="arch" type="xml">
+            <form string="Lost Reason">
+                <group>
+                    <field name="name" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="crm_bu_view_tree" model="ir.ui.view">
+        <field name="name">crm.bu.tree</field>
+        <field name="model">crm.bu</field>
+        <field name="arch" type="xml">
+            <tree string="LEad Bus" >
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+
+        <record id="crm_sub_bu_form" model="ir.ui.view">
+            <field name="name">crm.sub.bu.form</field>
+            <field name="model">crm.sub.bu</field>
+            <field name="arch" type="xml">
+                <form string="Sub Bus">
+                    <group>
+                        <field name="crm_bu_id" required="1" options='{"no_create": True}'/>
+                        <field name="name" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="crm_sub_bu_tree" model="ir.ui.view">
+            <field name="name">crm.sub.bu.tree</field>
+            <field name="model">crm.sub.bu</field>
+            <field name="arch" type="xml">
+                <tree string="Sub bus">
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+    <record id="crm_bu_inherit" model="ir.ui.view">
+        <field name="name">crm.bu.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+
+            <field name="date_deadline" position="after" >
+                <field name="crm_bu_id"/>
+                <field name="crm_sub_bu_id" />
+            </field>
+
+            <field name="team_id" position="after">
+                    <field name="invoice_ids" />
+            </field>
+        </field>
+    </record>
+
+    <record id="contact_addon_inherit" model="ir.ui.view">
+        <field name="name">res.partner.addons.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/*" position="before">
+                    <header>
+
+                    <field name="state" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}" />
+                </header>
+                </xpath>
+
+                <field name="vat" position="after">
+                    <field name="financial_year" />
+                </field>
+            </field>
+    </record>
+
+    <record id="contact_addon_page_inherit" model="ir.ui.view">
+        <field name="name">res.partner.addons.page.name.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form//notebook//page[@name='contact']" position="attributes" >
+                    <attribute name="string">
+                        Child Account
+                    </attribute>
+                </xpath>
+
+                <field name="vat" position="after">
+                    <field name="financial_year" />
+                </field>
+            </field>
+    </record>
+
+
+    <record id="view_year_form" model="ir.ui.view">
+            <field name="name">yearmaster.form</field>
+            <field name="model">year.master</field>
+            <field name="arch" type="xml">
+                <form string="Year">
+                        <group>
+                            <field name="start_date" required="1"/>
+                            <field name="enn_date" required="1"/>
+                        </group>
+                        <group>
+                            <field name="name" required="1"/>
+                        </group>
+                </form>
+            </field>
+        </record>
+
+
+         <record id="view_yearmaster_tree" model="ir.ui.view">
+            <field name="name">yearmaster.tree</field>
+            <field name="model">year.master</field>
+            <field name="arch" type="xml">
+                <tree string="Year">
+                    <field name="name" />
+                    <!-- <field name="is_current_fy"/> -->
+                </tree>
+            </field>
+        </record>
+
+         <record id="action_crm_year" model="ir.actions.act_window">
+            <field name="name">Year</field>
+            <field name="res_model">year.master</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_yearmaster_tree"/>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Click to define a new sales BU
+              </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_crm_year" name="Year" parent="crm.crm_menu_config" action="action_crm_year" />
+
+
+    <record id="action_crm_bu" model="ir.actions.act_window">
+            <field name="name">Lead Bus</field>
+            <field name="res_model">crm.bu</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="crm_bu_view_tree"/>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Click to define a new sales BU
+              </p>
+            </field>
+        </record>
+        <menuitem id="menu_crm_bu" name="Bu Unit" parent="crm.crm_menu_config"  action="action_crm_bu" />
+
+    <record id="action_crm_sub_bu" model="ir.actions.act_window">
+            <field name="name">Lead Bus</field>
+            <field name="res_model">crm.sub.bu</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="crm_sub_bu_tree"/>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Click to define a new sales BU
+              </p>
+            </field>
+        </record>
+        <menuitem id="menu_crm_sub_bu" name="Sub Bu Unit" parent="crm.crm_menu_config"  action="action_crm_sub_bu" />
+
+
+</odoo>

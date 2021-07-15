@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8'?>
+            
+            <rsm:CrossIndustryInvoice xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+                <rsm:ExchangedDocumentContext>
+                    <ram:GuidelineSpecifiedDocumentContextParameter>
+                        <ram:ID>urn:cen.eu:en16931:2017</ram:ID>
+                    </ram:GuidelineSpecifiedDocumentContextParameter>
+                </rsm:ExchangedDocumentContext>
+
+                <rsm:ExchangedDocument>
+                    <ram:ID>INV/2021/07/0001</ram:ID>
+                    <ram:TypeCode>380</ram:TypeCode>
+                    <ram:IssueDateTime>
+                        <udt:DateTimeString format="102">20210701</udt:DateTimeString>
+                    </ram:IssueDateTime>
+                    
+                </rsm:ExchangedDocument>
+
+                <rsm:SupplyChainTradeTransaction>
+                    
+                        
+            
+            
+                <ram:IncludedSupplyChainTradeLineItem>
+                    <ram:AssociatedDocumentLineDocument>
+                        <ram:LineID>1</ram:LineID>
+                    </ram:AssociatedDocumentLineDocument>
+
+                    <ram:SpecifiedTradeProduct>
+                        
+                        <ram:SellerAssignedID>E-COM09</ram:SellerAssignedID>
+                        <ram:Name>[E-COM09] Large Desk</ram:Name>
+                    </ram:SpecifiedTradeProduct>
+
+                    <ram:SpecifiedLineTradeAgreement>
+                        <ram:GrossPriceProductTradePrice>
+                            <ram:ChargeAmount currencyID="INR">40000.00</ram:ChargeAmount>
+
+                            
+                        </ram:GrossPriceProductTradePrice>
+                    </ram:SpecifiedLineTradeAgreement>
+
+                    <ram:SpecifiedLineTradeDelivery>
+                        <ram:BilledQuantity>2.0</ram:BilledQuantity>
+                    </ram:SpecifiedLineTradeDelivery>
+
+                    <ram:SpecifiedLineTradeSettlement>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:RateApplicablePercent>14.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:RateApplicablePercent>14.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                            <ram:LineTotalAmount currencyID="INR">80000.00</ram:LineTotalAmount>
+                        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    </ram:SpecifiedLineTradeSettlement>
+
+                </ram:IncludedSupplyChainTradeLineItem>
+            
+        
+                    
+                        
+            
+            
+                <ram:IncludedSupplyChainTradeLineItem>
+                    <ram:AssociatedDocumentLineDocument>
+                        <ram:LineID>2</ram:LineID>
+                    </ram:AssociatedDocumentLineDocument>
+
+                    <ram:SpecifiedTradeProduct>
+                        
+                        <ram:SellerAssignedID>E-COM10</ram:SellerAssignedID>
+                        <ram:Name>[E-COM10] Pedal Bin</ram:Name>
+                    </ram:SpecifiedTradeProduct>
+
+                    <ram:SpecifiedLineTradeAgreement>
+                        <ram:GrossPriceProductTradePrice>
+                            <ram:ChargeAmount currencyID="INR">400.00</ram:ChargeAmount>
+
+                            
+                        </ram:GrossPriceProductTradePrice>
+                    </ram:SpecifiedLineTradeAgreement>
+
+                    <ram:SpecifiedLineTradeDelivery>
+                        <ram:BilledQuantity>3.0</ram:BilledQuantity>
+                    </ram:SpecifiedLineTradeDelivery>
+
+                    <ram:SpecifiedLineTradeSettlement>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:RateApplicablePercent>9.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:RateApplicablePercent>9.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                            <ram:LineTotalAmount currencyID="INR">1200.00</ram:LineTotalAmount>
+                        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    </ram:SpecifiedLineTradeSettlement>
+
+                </ram:IncludedSupplyChainTradeLineItem>
+            
+        
+                    
+                        
+            
+            
+                <ram:IncludedSupplyChainTradeLineItem>
+                    <ram:AssociatedDocumentLineDocument>
+                        <ram:LineID>3</ram:LineID>
+                    </ram:AssociatedDocumentLineDocument>
+
+                    <ram:SpecifiedTradeProduct>
+                        
+                        <ram:SellerAssignedID>E-COM11</ram:SellerAssignedID>
+                        <ram:Name>[E-COM11] Cabinet with Doors</ram:Name>
+                    </ram:SpecifiedTradeProduct>
+
+                    <ram:SpecifiedLineTradeAgreement>
+                        <ram:GrossPriceProductTradePrice>
+                            <ram:ChargeAmount currencyID="INR">300.00</ram:ChargeAmount>
+
+                            
+                        </ram:GrossPriceProductTradePrice>
+                    </ram:SpecifiedLineTradeAgreement>
+
+                    <ram:SpecifiedLineTradeDelivery>
+                        <ram:BilledQuantity>4.0</ram:BilledQuantity>
+                    </ram:SpecifiedLineTradeDelivery>
+
+                    <ram:SpecifiedLineTradeSettlement>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:RateApplicablePercent>5.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:RateApplicablePercent>9.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:RateApplicablePercent>9.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                            <ram:LineTotalAmount currencyID="INR">1200.00</ram:LineTotalAmount>
+                        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    </ram:SpecifiedLineTradeSettlement>
+
+                </ram:IncludedSupplyChainTradeLineItem>
+            
+        
+                    
+
+                    <ram:ApplicableHeaderTradeAgreement>
+                        <ram:SellerTradeParty>
+                            
+            
+                <ram:Name>IN Company</ram:Name>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>IN Company</ram:PersonName>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>+91 81234 56789</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID schemeID="SMTP">info@company.inexample.com</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                </ram:DefinedTradeContact>
+
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>56066</ram:PostcodeCode>
+                    <ram:LineOne>A</ram:LineOne>
+                    
+                    <ram:CityName>Kannamangala</ram:CityName>
+                    <ram:CountryID>IN</ram:CountryID>
+                </ram:PostalTradeAddress>
+            
+        
+
+                            
+                        </ram:SellerTradeParty>
+
+                        <ram:BuyerTradeParty>
+                            
+            
+                <ram:Name>Registered Customer</ram:Name>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>Registered Customer</ram:PersonName>
+                    
+                    
+                </ram:DefinedTradeContact>
+
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>382007</ram:PostcodeCode>
+                    <ram:LineOne>201, Second Floor, IT Tower 4</ram:LineOne>
+                    <ram:LineTwo>InfoCity Gate - 1, Infocity</ram:LineTwo>
+                    <ram:CityName>Gandhinagar</ram:CityName>
+                    <ram:CountryID>IN</ram:CountryID>
+                </ram:PostalTradeAddress>
+            
+        
+
+                            <ram:SpecifiedTaxRegistration>
+                                <ram:ID schemeID="VA">12GEOPS0823BBZH</ram:ID>
+                            </ram:SpecifiedTaxRegistration>
+                        </ram:BuyerTradeParty>
+
+                        <ram:BuyerOrderReferencedDocument>
+                            <ram:IssuerAssignedID>INV/2021/07/0001: INV/2021/07/0001</ram:IssuerAssignedID>
+                        </ram:BuyerOrderReferencedDocument>
+                    </ram:ApplicableHeaderTradeAgreement>
+
+                    <ram:ApplicableHeaderTradeDelivery>
+                        
+                    </ram:ApplicableHeaderTradeDelivery>
+
+                    <ram:ApplicableHeaderTradeSettlement>
+
+                        
+
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:CalculatedAmount currencyID="INR">11200.00</ram:CalculatedAmount>
+                                <ram:BasisAmount currencyID="INR">80000.00</ram:BasisAmount>
+                                <ram:RateApplicablePercent>14.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:CalculatedAmount currencyID="INR">11200.00</ram:CalculatedAmount>
+                                <ram:BasisAmount currencyID="INR">80000.00</ram:BasisAmount>
+                                <ram:RateApplicablePercent>14.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:CalculatedAmount currencyID="INR">108.00</ram:CalculatedAmount>
+                                <ram:BasisAmount currencyID="INR">2400.00</ram:BasisAmount>
+                                <ram:RateApplicablePercent>9.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:CalculatedAmount currencyID="INR">108.00</ram:CalculatedAmount>
+                                <ram:BasisAmount currencyID="INR">2400.00</ram:BasisAmount>
+                                <ram:RateApplicablePercent>9.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:CalculatedAmount currencyID="INR">60.00</ram:CalculatedAmount>
+                                <ram:BasisAmount currencyID="INR">1200.00</ram:BasisAmount>
+                                <ram:RateApplicablePercent>5.0</ram:RateApplicablePercent>
+                            </ram:ApplicableTradeTax>
+                        
+                            
+                            <ram:ApplicableTradeTax>
+                                <ram:CalculatedAmount currencyID="INR">6.36</ram:CalculatedAmount>
+                                <ram:BasisAmount currencyID="INR">1200.00</ram:BasisAmount>
+                                
+                            </ram:ApplicableTradeTax>
+                        
+
+                        <ram:SpecifiedTradePaymentTerms>
+                            <ram:Description>End of Following Month</ram:Description>
+                            <ram:DueDateDateTime>
+                                <udt:DateTimeString>20210831</udt:DateTimeString>
+                            </ram:DueDateDateTime>
+                        </ram:SpecifiedTradePaymentTerms>
+
+                        <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                            <ram:LineTotalAmount currencyID="INR">82400.00</ram:LineTotalAmount>
+                            <ram:TaxBasisTotalAmount currencyID="INR">82400.00</ram:TaxBasisTotalAmount>
+                            <ram:TaxTotalAmount currencyID="INR">22898.36</ram:TaxTotalAmount>
+                            <ram:GrandTotalAmount currencyID="INR">105298.36</ram:GrandTotalAmount>
+                            <ram:TotalPrepaidAmount currencyID="INR">0.00</ram:TotalPrepaidAmount>
+                            <ram:DuePayableAmount currencyID="INR">105298.36</ram:DuePayableAmount>
+                        </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                    </ram:ApplicableHeaderTradeSettlement>
+                </rsm:SupplyChainTradeTransaction>
+            </rsm:CrossIndustryInvoice>
+        

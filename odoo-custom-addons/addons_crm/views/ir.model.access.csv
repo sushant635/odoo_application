@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_bu,crm.bu,model_crm_bu,,1,1,1,1
+access_crm_sub_bu,crm.sub.bu,model_crm_sub_bu,,1,1,1,1
+access_crm_year,year.master,model_year_master,,1,1,1,1
+access_res_partner,res.partner,model_res_partner,base.group_user,1,1,1,1
+access_crm_invoice,crm.invoice,model_crm_invoice,,1,1,1,1
+
+
+
